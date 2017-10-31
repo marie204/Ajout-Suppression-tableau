@@ -23,7 +23,6 @@
 				e= tableFruit.indexOf(d);
 				document.getElementById("demo").innerHTML += d +"<button onclick='supprimeFruit("+e+")'>Supprimer</button> <br>";
 			}
-
 			function supprimeFruit(s){
 					tableFruit.splice(s,1);
 					f = tableFruit.length;
@@ -33,7 +32,7 @@
 						if (tableFruit[x] != null){
 							document.getElementById("demo").innerHTML = document.getElementById("demo").innerHTML + tableFruit[x]+"<button onclick='supprimeFruit("+x+")'>Supprimer</button> <br>";
 						
-						} 
+						}
 						x= x+1;
 					}
 				}
@@ -42,7 +41,6 @@
 							fonctionFuitee();
 						}
 				}
-
 				function fonctionNulle(){
 					console.log(tableFruit);
 				}
