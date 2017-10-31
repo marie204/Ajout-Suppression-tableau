@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>exercice du jour</title>
+		<meta charset="utf-8">
 	</head>
 	<body>
 		<h1>
@@ -10,7 +11,7 @@
 		<!-- capacité utilisateur ajout mot dans un tableau et l'affiche.
 		ajout bouton supprime fruit.
 		ajoute bouton debug qui affiche contenu tableau -->
-		<input type="text" id="contenuUser">
+		<input type="text" id="contenuUser" onkeypress="entree();">
 		<button onclick="fonctionFuitee();"> test </button>
 		<button onclick="fonctionNulle();"> Debug </button>
 		<p id="demo"></p>
@@ -35,6 +36,11 @@
 						} 
 						x= x+1;
 					}
+				}
+				function entree(){
+						if (event.keyCode == 13) {
+							fonctionFuitee();
+						}
 				}
 
 				function fonctionNulle(){
