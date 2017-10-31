@@ -13,15 +13,26 @@ ajoute bouton debug qui affiche contenu tableau -->
 
 <input type="text" id="contenuUser">
 <button onclick="fonctionFuitee();"> test </button>
+<button onclick="fonctionNulle();"> Debug </button>
 
-<p id="demo">test</p>
+<p id="demo"></p>
 
 <script>
+	tableFruit = [];
 	function fonctionFuitee(){
-		document.getElementById("demo").innerHTML = "testu";
+		d = document.getElementById("contenuUser").value;
+		tableFruit.push(d);
+		e= tableFruit.indexOf(d);
+
+		document.getElementById("demo").innerHTML += d +"<button onclick='supprimeFruit(parseInt(e))'>Supprimer</button> <br>";
+	}
+	function supprimeFruit(s){
+			console.log(s);
 	}
 
-
+		function fonctionNulle(){
+			console.log(tableFruit);
+		}
 </script>
 
 
