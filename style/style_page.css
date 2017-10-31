@@ -1,0 +1,83 @@
+/* Relatif aux ids*/
+#entete {
+width: 95%;
+max-width: 1000px;
+height: auto;
+}
+.rate{
+font-family: Arial;
+}
+.irradie{
+	border-radius: 5px;
+}
+#accueilgauche{
+width: 45%;
+float: left;
+}
+#accueildroit{
+width: 90%;
+text-align: justify;
+}
+#AccueilPara{
+width: 100%;
+text-align: justify;
+align-content: left;
+border:solid blue;
+}
+#AccTab{
+border: solid blue;
+}
+/*Rekatif aux classes du documents*/
+.miniaL{
+float: right;
+margin-left: 10px;
+border:solid black;
+border-radius: 20px;
+}
+.miniaR{
+float: left;
+margin-right: 10px;
+border:solid black;
+border-radius: 20px;
+}
+/*CSS de la généralité*/
+p{
+font-family: 'Neucha', cursive;
+text-align: justify;
+font-size: 15px;
+}
+h1{
+color:black;
+text-decoration: underline;
+border-radius: 5px;
+border: solid black;
+text-align: center;
+padding-top: 10px;
+padding-bottom: 10px;
+font-family: 'Neucha', cursive;
+}
+a{
+font-weight: bold;
+text-decoration: none;
+}
+a:hover{
+font-style: italic;
+font-weight: normal;
+text-decoration: none;
+}
+address{
+text-align: center;
+}
+video{
+width: 100%;
+height: auto;
+}
+iframe{
+width: 100%;
+}
+form{
+	font-family: 'Neucha', cursive;
+}
+section{
+	background-color: rgba(255,255,255, 0.5);
+}
