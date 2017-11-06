@@ -1,3 +1,7 @@
 nav{
 	margin-bottom: 50px;
 }
+a#pageActive {
+			background-color: grey; // ou tout autre style
+			color: grey;
+		}

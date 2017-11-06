@@ -7,14 +7,14 @@
 		<section>
 			<h1 id="serpents">Les serpents</h1>
 			<p>
-				<img src="../image/python-mini.jpg" class="miniaL" alt="image de serpent">
+				<img src="./image/python-mini.jpg" class="miniaL" alt="image de serpent">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-			<p> <img src="../image/python-mini2.jpg" class="miniaR" alt="image de serpent">  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			<p> <img src="./image/python-mini2.jpg" class="miniaR" alt="image de serpent">  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -30,18 +30,17 @@
 			</section>
 			<div>
 				<p id="tortuePara">
-					<img src="../image/tortue-mini.jpg" class="miniaL" alt="image de tortue" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					<img src="./image/tortue-mini.jpg" class="miniaL" alt="image de tortue" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-					<div style="text-align: center"><audio controls style="  border: solid black; ">
-					<source src="../media/EJM.mp3" type="audio/mp3" ></audio></div>
+					
 					<h1>Les dragons</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <img src="../image/dragon-mini.jpg" class="miniaL" alt="image de dragon du komodo">
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <img src="./image/dragon-mini.jpg" class="miniaL" alt="image de dragon du komodo">
 						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

@@ -1,40 +1,48 @@
 <?php
-                include'view/header.php';
-                include'view/nav.php';
+
+                $accueilON  = $diversON = $classiqueON = $reptileON = $oiseauON = $formulaireON = "";
+               
                 if($_SERVER['REQUEST_METHOD'] === 'GET' and isset($_GET['page'])) {
                     switch ($_GET['page']) {
                         case 'accueil':
-                        include 'view/accueil.php';
+                        $includePage = 'view/accueil.php';
+                        $accueilON = "id='pageActive'";
                             break;
                         case 'classique':
-                            include 'view/classique.php';
+                            $includePage = 'view/classique.php';
+                            $classiqueON = "id='pageActive'";
                             break;
                         case 'contact':
-                            include 'view/contact.php';
+                            $includePage = 'view/contact.php';
+                            $contactON = "id='pageActive'";
                             break;
                         case 'formulaire':
-                            include 'view/formulaire.php';
+                            $includePage = 'view/formulaire.php';
+                            $formulaireON = "id='pageActive'";
                             break;
                         case 'oiseau':
-                            include 'view/oiseau.php';
+                            $includePage = 'view/oiseau.php';
+                            $oiseauON = "id='pageActive'";
                             break;
                         case 'reptile':
-                            include 'view/reptile.php';
+                            $includePage = 'view/reptile.php';
+                            $reptileON = "id='pageActive'";
                             break;
                         case 'contact':
                             include 'view/contact.php';
                             break;
-                        case 'multi':
-                            include 'view/multiplication.php';
+                        case 'divers':
+                            $includePage = 'view/divers.php';
                             break;
                         default:
-                            include 'view/accueil.php';
+                            $includePage = 'view/accueil.php';
                             break;
                     }
                 } 
                 else {
-                    include 'view/accueil.php';}
+                    $includePage = 'view/accueil.php';
 
-                include'view/footer.php';
+                }
+
 
                 ?>
