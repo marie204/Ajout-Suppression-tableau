@@ -55,6 +55,7 @@ background-size: 100%;
 background-attachment: fixed;
 background-position: bottom right;
 font-family: 'Neucha', cursive;
+margin-bottom: 50px;
 }
 section{
 	background-color: rgba(255,255,255, 0.7);
