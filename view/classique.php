@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
+
 		<title></title>
 	</head>
 	<body>
 		<section>
 			<script>
-				
-				selectionAnimal = "";
+				var petfinder = require('pet-finder-api')('api_key','api_secret');
 				function fonctionSwitch(selectionAnimal){
+					console.log('ok');
+					document.getElementById('rechercheAnimal').innerHTML = '<h1>'+selectionAnimal+'</h1>';
+						
+
+
+
+
+
+				}
 					//console.log('ok');
 
-					document.getElementById("rechercheAnimal").innerHTML = "<table><tr><th>Catégorie</th><th>test</th></tr>"
+					/*document.getElementById("rechercheAnimal").innerHTML = "<table><tr><th>Catégorie</th><th>test</th></tr>"
 					foreach(classique, cle	: valeur){
 						if (cle == "image") {
 							document.getElementById("rechercheAnimal").innerHTML += "<tr><td rowspan>";
@@ -25,10 +34,10 @@
 
 						}
 
-					}
+					}*/
 
 						
-					}
+					
 				
 					
 					
@@ -37,7 +46,7 @@
 				<button class="btn-primary" id='SelectCat' onclick="fonctionSwitch('chat');">Chat</button>
 				<button class="btn-info" onclick="fonctionSwitch('chien');"> Chien</button>
 				
-				<p id="rechercheAnimal">test</p>
+				<p id="rechercheAnimal"></p>
 				
 			</section>
 		</body>
