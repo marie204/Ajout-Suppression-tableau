@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="./style/style2.css" />
         <link rel="stylesheet" href="./style/style_page.css" />
         <title>Accueil</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <body>
                 
