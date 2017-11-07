@@ -11,13 +11,7 @@
     <script>
       $(function() {
         $('#action').click(function() {
-          $.get({
-          	url: 'http://api.petfinder.com/',
-          	data: {
-          		key: '8f973d24c6594e76da18a59a30915e9c', 
-
-          	}
-          }, function(data) {
+          $.get(, function(data) {
             console.log(data);
           });    
         });  

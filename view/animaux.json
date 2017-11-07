@@ -1,5 +1,9 @@
 {"classique": {
-	"chat":{ "animal":"chat", "image":["chat-mini.jpg"],"dv":"15-18 ans, en liberté 2-4 ans","description":"Le chat est un animal territorial"},
-	"chien":{ "animal":"chien", "image":["chien1-mini.jpg", "chien2-mini.jpg"], "dv":"15-18 ans", "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur tenetur rerum aperiam nostrum eum, ex beatae exercitationem quibusdam deserunt, quo dolore necessitatibus? Blanditiis placeat nam modi at dolore incidunt impedit."},
-	"souris":{"animal":"souris", "image":["souris-mini.jpg"], "dv":"5-8 ans"},
-}}
+	"chat":{
+	"Siamois":{}, "Persan":{}, "Ragdoll":{},"Maine coon":{}},
+	"chien":{"Berger Allemand":{}, "Beagle":{}, "Bulldog":{}, "Dobermann":{}},
+	"souris":{"angora":{}, "variegated":{},"Siamoise":{}, "broken":{}},
+}
+""
+
+}
