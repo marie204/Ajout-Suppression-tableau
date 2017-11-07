@@ -3,7 +3,20 @@
 	"Siamois":{}, "Persan":{}, "Ragdoll":{},"Maine coon":{}},
 	"chien":{"Berger Allemand":{}, "Beagle":{}, "Bulldog":{}, "Dobermann":{}},
 	"souris":{"angora":{}, "variegated":{},"Siamoise":{}, "broken":{}},
-}
-""
+},"oiseau":{
+"perroquet": {"Gris du Gabon":{}, "Pionus":{}, "Perruche":{}, "Electus": {}, "Cacatoès":{}, "Aras":{}},
+"petit oiseau":{"diamant de Bichenov":{}, "Diamant mandarin":{}, "Canari":{}, "Padda de Java":{}, "Colombe diamant":{} },
+"Poule":{"Plumouth":{}, "Orpington":{}, "Leghorn":{},"Poule Soie":{}, "Poule de Sussex":{}, "Hollandaise huppée":{}
+},}
+"reptile"{
 
+},
+"poisson":{
+	"mythologique":{"Cthulhu":{},"Nessie":{}, "Kraken":{}, "Sirene":{}, "Leviathan":{}},
+	"dangereux":{"Requin":{}, "Pirhanna":{}, "Méduse":{},"Poisson pierre":{}, "fugu":{}, "Pieuvre":{}},
+
+
+
+
+}
 }
