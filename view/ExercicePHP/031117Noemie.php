@@ -7,7 +7,7 @@
 		<title>Exercice 8</title>
 	</head>
 	<body>
-		<form method="post" action="031117exercice8.php">
+		<form method="post" action="031117Noemie.php">
 			<input type="text" name="name" value="John Smith"><br>
 			<input type="text" name="noemie" value='Question'>
 			<input type="submit">
