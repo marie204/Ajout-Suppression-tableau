@@ -61,17 +61,47 @@ $noeuds = [ // jonctions des noeuds
 	'H' => ['G', 'I'],
 	'I' => ['E', 'G', 'H']
 ];
+$calcul = [];
 
 // LE PARCOURS
 
-if (isset($_POST['selectTo'])&&(isset($_POST['selectFrom']))&&($_POST['selectTo'] != $_POST['selectFrom'])) {
+if (isset($_POST['selectTo']) and (isset($_POST['selectFrom'])) and ($_POST['selectTo'] != $_POST['selectFrom'])) {
 	searchPaths($_POST['selectFrom'], $_POST['selectTo']);
+	usort($paths, "triByLengh");
+	calculPaths();
 	print_r($paths);
+	print_r('calcul:');
+	var_dump($calcul);
 }else{
 	echo("une erreur est survenue, merci de réessayer");
 
 }
 
+function triByLengh($a,$b){
+	$c = strlen($a) -  strlen($b);
+	return $c;
+}
+//$b = substr($valeur, $y, 1);
+function calculPaths(){
+	global $paths;
+	global $points;
+	global $calcul;
+
+	foreach ($paths as $cle => $valeur) {
+		$x = strlen($valeur);
+		$a = 0;
+		for ($y=1; $y != $x ; $y++) { 
+			$c0 = substr($valeur, $y, 1);
+			$c1 = substr($valeur, $y-1, 1);
+			$v = sqrt(($points[$c0][0]-$points[$c1][0])**2 + ($points[$c0][1]- $points[$c1][1])**2);
+			$a =$a + $v;
+			//print_r($v.'<br>');
+			//print_r($c0." ".$c1.'<br>');
+		}
+		//print_r('A:'.$a);
+		array_push($calcul, $a);
+	}
+}
 
 
 // FONCTION PRINCIPALE
@@ -82,7 +112,7 @@ function searchPaths($from, $to) {
 	retourner quelque chose */
 	global $paths; 
 	global $point;
-	global $noeuds; 	
+	global $noeuds; 
 	$paths = [$from]; // on initialise le point de départ
 	
 
