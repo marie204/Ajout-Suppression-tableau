@@ -33,7 +33,8 @@
                             break;
                         case 'login':
                             $includePage = 'view/login.php';
-                            break;
+                            $login = "id=pageActive";
+                            break;                        
                         default:
                             $includePage = 'view/accueil.php';
                             break;
