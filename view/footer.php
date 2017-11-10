@@ -1,5 +1,5 @@
 <footer>
-                    Ceci a été conçu par Marie, voir <a href="index.php?page=contact" target="iframeMain">fiche Contact</a>.
+                    Ceci a été conçu par Marie, voir <a href="indexu.php?page=contact" target="iframeMain">fiche Contact</a>.
                     <table>
                         <tr>
                             <a href="https://fr-fr.facebook.com" target="_blank"><img src="./image/facebook.png" alt="logo facebook"></a>

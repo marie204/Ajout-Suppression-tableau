@@ -1,6 +1,6 @@
 <?php
 
-                $accueilON  = $diversON = $classiqueON = $reptileON = $oiseauON = $formulaireON = "";
+                $accueilON  = $login = $classiqueON = $reptileON = $oiseauON = $formulaireON = "";
                
                 if($_SERVER['REQUEST_METHOD'] === 'GET' and isset($_GET['page'])) {
                     switch ($_GET['page']) {
@@ -31,8 +31,8 @@
                         case 'contact':
                             include 'view/contact.php';
                             break;
-                        case 'divers':
-                            $includePage = 'view/divers.php';
+                        case 'login':
+                            $includePage = 'view/login.php';
                             break;
                         default:
                             $includePage = 'view/accueil.php';
@@ -43,6 +43,6 @@
                     $includePage = 'view/accueil.php';
 
                 }
-
+                $varIndex = $_GET['page'];
 
                 ?>

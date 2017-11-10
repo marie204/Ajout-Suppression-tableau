@@ -1,4 +1,4 @@
-
+		<title>Animaux à plume</title>
 		<meta charset="utf-8">
 		<title>Projet stagiaire</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">

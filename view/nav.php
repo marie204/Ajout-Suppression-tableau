@@ -5,7 +5,7 @@
 	<a class="btn btn-light" <?php echo $classiqueON ?> href="indexu.php?page=classique" role="button">A poil</a>
 	<a class="btn btn-light" <?php echo $oiseauON ?> href="indexu.php?page=oiseau" role="button">A plume</a>
 	<a class="btn btn-light" <?php echo $formulaireON ?> href="indexu.php?page=formulaire" role="button">Quel animal pour moi?</a>
-	<a class="btn btn-light" <?php echo $diversON ?> href="indexu.php?page=divers" role="button">Divers</a>
+	<a class="btn btn-light" <?php echo $login ?> href="indexu.php?page=login" role="button">login</a>
 
 
 	
