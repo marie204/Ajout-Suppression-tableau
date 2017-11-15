@@ -34,16 +34,21 @@
                         case 'login':
                             $includePage = 'view/login.php';
                             $login = "id=pageActive";
-                            break;                        
+                            break; 
+                        case 'trouvemonanimal':
+                            $includePage = 'view/trouvemonanimal.php';
+                            $login = "id=pageActive";
+                            break;                       
                         default:
                             $includePage = 'view/accueil.php';
+                             $accueilON = "id='pageActive'"; 
                             break;
                     }
-                } 
-                else {
+                }else {
                     $includePage = 'view/accueil.php';
+                    $accueilON = "id='pageActive'"; 
 
                 }
-                $varIndex = $_GET['page'];
+                //$varIndex = $_GET['page'];
 
                 ?>

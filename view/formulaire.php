@@ -1,24 +1,30 @@
 		<meta charset="utf-8">
 		<title>Projet stagiaire</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script>
+			
+			
+		</script>
 		<section>
-		<form action="Trouvemonanimal.php" method="get">
+		<form action="indexu.php?page=trouvemonanimal" method="get">
+		<input type="hidden" name="page" value="trouvemonanimal">
+				A quel fréquence êtes vous chez vous? <br>
 			<fieldset class="irradie">
-				Ceci est une première question. <br>
-				<label for="Q01R01"> <input type="radio" name="Q01"> Ceci est une première réponse </label> <br>
-				<label for="Q01R02"> <input type="radio" name="Q01"> Ceci est une seconde réponse </label><br>
-				<label for="Q01R03"> <input type="radio" name="Q01"> Ceci est une troisième réponse </label>
-			</fieldset>
-			<br>
-			<fieldset class="irradie">
-				Ceci est une seconde question<br>
-				<label for="Q002R01"> <input type="radio" name="Q02"> Ceci est une première réponse</label><br>
-				<label for="Q002R02"> <input type="radio" name="Q02"> Ceci est une seconde réponse</label><br>
-				<label for="Q002R03"> <input type="radio" name="Q02"> Ceci est une première réponse</label><br>
+				<label for="Q01R01"><input type="radio" name="Q01" value="Q01R01"> Tout le temps </label> <br>
+				<label for="Q01R02"><input type="radio" name="Q01" value="Q01R02"> Une fois toutes les deux semaines environ </label><br>
+				<label for="Q01R03"><input type="radio" name="Q01" value="Q01R03"> Une fois par an </label><br>
 			</fieldset>
 
+			
+			<br>
+			Quelle qualité doit avoir votre animal?
+			<fieldset class="irradie">
+				<label for="Q02R01"><input type="radio" name="Q02" value="Q02R01"> L'affection </label> <br>
+				<label for="Q02R02"><input type="radio" name="Q02" value="Q02R02"> La fidélité </label><br>
+				<label for="Q02R03"><input type="radio" name="Q02" value="Q02R02"> Le calme </label><br>
+			</fieldset>
 			<br><br>
-			<input type="submit" name="Valider" >
+			<input type="submit" onclick="fonctionVerif();">
 			
 		</form></section>
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->

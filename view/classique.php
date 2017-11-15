@@ -8,7 +8,13 @@
 	</head>
 	<body>
 		<section>
+
+			
+
 			<script>
+
+				
+
 				/*console.log(petfinder);
 				function fonctionSwitch(selectionAnimal){
 					console.log('ok');
@@ -32,11 +38,12 @@
 
 
 
-				<form method="get" action="indexu.php?page=classique">
+				<form method="get" action="indexu.php">
+					<input type="text" name="page" value="classique" style="display: none">
 					<select name="animal"> 
 						<option value="chat">Chat</option>
 						<option value="chien">Chien</option>
-						<option value="rongeurs">Rongeur</option>
+						<option value="rongeur">Rongeur</option>			
 					</select>
 
 					<input type="submit">
@@ -47,6 +54,25 @@
 				<button class="btn-info" onclick="fonctionSwitch('chien');"> Chien</button> -->
 				
 				<p id="rechercheAnimal"></p>
+
+				<script>
+				function monSwitch(monAnimal){
+					//console.log('ok');
+					document.getElementById('rechercheAnimal').innerHTML = monAnimal+" est le meilleur animal du monde";
+
+				}
+			</script>
+
+
+			<?php
+			if (isset($_GET['animal'])) {
+				echo '<script> monSwitch("'.$_GET["animal"].'")</script>';
+			}
+			?>
+
+
+
+
 				
 			</section>
 		</body>
