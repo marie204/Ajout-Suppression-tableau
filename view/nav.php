@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="./style/styleNav.css" >
 <div class="btn-group" role="goup">
 	<a class="btn btn-light" <?php echo $accueilON ?>href="indexu.php?page=accueil" role="button">Accueil</a>
 	<a class="btn btn-light" <?php echo $reptileON ?> href="indexu.php?page=reptile" role="button">A écaille</a>

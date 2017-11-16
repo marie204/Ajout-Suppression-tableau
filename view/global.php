@@ -37,7 +37,7 @@
                             break; 
                         case 'trouvemonanimal':
                             $includePage = 'view/trouvemonanimal.php';
-                            $login = "id=pageActive";
+                            $formulaireON = "id=pageActive";
                             break;                       
                         default:
                             $includePage = 'view/accueil.php';

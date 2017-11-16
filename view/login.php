@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Page de Login</title>
-</head>
-<body>
+
 	<?php
 $userLogin = [
 	"61046" => "an.nie",
@@ -80,7 +75,7 @@ $userPassword = [
 
 <?php
 	if((isset($_POST['log'])&&(isset($_POST['mdp'])))){
-		echo'heeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeelllllllllllllllllllllllllllllooooooooooooooooooooooooooooo!!!!';
+		echo'hello world';
 	}
 
 

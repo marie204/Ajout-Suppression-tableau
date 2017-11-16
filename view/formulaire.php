@@ -1,8 +1,8 @@
-		<meta charset="utf-8">
-		<title>Projet stagiaire</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
 		<script>
-			
+			function fonctionVerif(){
+				console.log("hello there, how are you?");
+			}
 			
 		</script>
 		<section>
