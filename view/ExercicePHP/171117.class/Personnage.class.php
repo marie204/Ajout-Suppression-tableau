@@ -1,9 +1,9 @@
 <?php 
 class Personnage{
-	public $nom;
-	public $vie;
-	public $classe;
-	public $genre;
+	private $nom;
+	private $vie;
+	private $classe;
+	private $genre;
 	//public $chance = 0;
 
 	public function __construct($test, $genre, $vie=50, $classe='guerrier'){
@@ -12,6 +12,22 @@ class Personnage{
 		$this->classe=$classe;
 		$this->genre=$genre;
 	}
+
+	public function getNom(){
+		return $this->nom;
+	}
+	public function getVie(){
+		return $this->vie;
+	}
+	public function getClasse(){
+		return $this->classe;
+	}
+	public function getGenre(){
+		return $this->genre;
+	}
+
+
+
 	public function monGenre(){
 		$a = $this->genre == 'F' ? 'e femme' : ' homme';
 		echo 'Je suis un'.$a;
@@ -35,7 +51,7 @@ class Personnage{
 			echo "<br>";
 		}else{
 			$takay->vie -= 1 ;
-			echo'coucou';
+			echo 'L.e.a joueu.r.se '.$this->nom.' vient d\' attaquer l.e.a joueu.r.se '.$takay->nom.'. i.e.l.le a perdu 1 point de vie. <br>';
 		}
 		
 	}
