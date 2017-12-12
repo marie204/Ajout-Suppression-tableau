@@ -118,4 +118,10 @@ width: 5%
 		padding-left: 1%;
 		padding-right: 1%;
 	}
+	img{
+		width: 35%;
+	}
+	footer img{
+		width: 5%;
+	}
 }
