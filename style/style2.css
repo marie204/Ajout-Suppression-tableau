@@ -92,6 +92,7 @@ li#essaie2:hover + li a{
 }
 
 
+
 /*Receptive*//*
 @media only screen and (max-width: 500px){
 ul{
@@ -109,3 +110,12 @@ footer img{
 width: 5%
 }
 }*/
+
+@media only screen and (max-width: 650px) {
+	body{
+		margin-left: 0%;
+		margin-right: 0%;
+		padding-left: 1%;
+		padding-right: 1%;
+	}
+}
