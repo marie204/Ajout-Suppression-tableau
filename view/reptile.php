@@ -25,7 +25,7 @@
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br> <a href="./Classique.html#souris" target="iframeMain"> Pour plus d'information, voir fiche souris</a></p>
 				<h1> Les tortues </h1>
 			</section>
-			<div>
+			<section>
 				<p id="tortuePara">
 					<img src="./image/tortue-mini.jpg" class="miniaL" alt="image de tortue" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -46,7 +46,7 @@
 						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
+				</section>
 				<!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

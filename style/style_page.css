@@ -29,6 +29,10 @@ border:solid blue;
 #AccTab{
 border: solid blue;
 }
+.paraErreur{
+	color:red; 
+	font-size:15px;
+}
 /*Rekatif aux classes du documents*/
 .miniaL{
 float: right;

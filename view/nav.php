@@ -5,6 +5,6 @@
 	<a class="btn btn-light" <?php echo $classiqueON ?> href="indexu.php?page=classique" role="button">A poil</a>
 	<a class="btn btn-light" <?php echo $oiseauON ?> href="indexu.php?page=oiseau" role="button">A plume</a>
 	<a class="btn btn-light" <?php echo $formulaireON ?> href="indexu.php?page=formulaire" role="button">Quel animal pour moi?</a>
-	<a class="btn btn-light" <?php echo $login ?> href="indexu.php?page=login" role="button">login</a>
+	<a class="btn btn-light" <?php echo $login ?> href="indexu.php?page=login" role="button"> <?php if(isset($_SESSION['content'])){ ?> Me déconnecter <?php }else{ ?> login <?php } ?> </a>
 	
 </div></center>

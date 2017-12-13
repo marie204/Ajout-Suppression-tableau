@@ -1,6 +1,7 @@
 <?php
-setcookie("login", $_POST['log']);
-header('../indexu.php')
+session_start();
+//setcookie("login", $_POST['log']);
+header('../indexu.php');
 $userLogin = [
 	"61046" => "an.nie",
 	"61022" => "cle.ment",
@@ -55,4 +56,40 @@ $userPassword = [
 	"61009" => "OhMyGod!",
 	"66666" => "admin",
 ];
+
+if(isset($_SESSION['content'])){
+	$_SESSION['content'] = null;
+	header('Location: ../indexu.php');
+
+}else{
+
+		if( isset($_POST['log'])&&(isset($_POST['mdp'])) ) {
+			$key = testUser($_POST['log'], $userLogin);
+			$key = testMdp($key, $_POST['mdp'], $userPassword);
+			if($key == 'erreur'){
+				header('Location: ../indexu.php?page=login&etat=erreur');
+			}else{
+				setcookie($userName[$key]);
+				$_SESSION['content']=$userName[$key];
+				header('Location: ../indexu.php');
+	}
+	}}
+
+function testUser($userName, $userLogin){
+	$key = array_search($userName, $userLogin);
+	if ($key == null) {
+		return 'erreur';
+	}else {
+		return $key;
+	}
+} 
+
+function testMdp($key, $userMdp, $userPassword){
+	if ($userPassword[$key] == $userMdp){
+		return $key;
+	}else{
+		return 'erreur';
+	}	
+}
+
 ?>
