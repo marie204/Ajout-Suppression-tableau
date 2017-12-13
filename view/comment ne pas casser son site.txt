@@ -1,0 +1,4 @@
+comment ne pas casser son site
+
+nav.php: 
+<?php if(isset($_SESSION['content'])){ 	?> <a class="btn btn-light" <?php echo $login ?> href="indexu.php?page=compteUser" role="button"> <?php echo $_SESSION['content']; ?> </a> <?php } ?>

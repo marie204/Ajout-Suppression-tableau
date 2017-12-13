@@ -1,6 +1,6 @@
 <?php
 
-                $accueilON  = $login = $classiqueON = $reptileON = $oiseauON = $formulaireON = "";
+                $accueilON  = $login = $loginOn = $classiqueON = $reptileON = $oiseauON = $formulaireON = "";
                
                 if($_SERVER['REQUEST_METHOD'] === 'GET' and isset($_GET['page'])) {
                     switch ($_GET['page']) {
@@ -34,6 +34,10 @@
                         case 'login':
                             $includePage = 'view/login.php';
                             $login = "id=pageActive";
+                            break; 
+                        case 'compteUser':
+                            $includePage = 'view/compteuser.php';
+                            $loginOn = "id=pageActive";
                             break; 
                         case 'trouvemonanimal':
                             $includePage = 'view/trouvemonanimal.php';
