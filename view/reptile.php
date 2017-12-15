@@ -1,6 +1,6 @@
 
 <section id="corpsDocs">test</section>
-
+<div id='testZone'></div>
 
 
 <?php 
@@ -20,13 +20,16 @@ echo '</script>';
 	var $userName = [];
 	var $prodDate = [];
 	var $lastMod = [];
+</script>
+		<?php remplirTableau(); ?>
+<script>
 	fonctionGeneration();
 	maSess == false ? null : fonctionCreateButton();
 	function fonctionGeneration(){
 		console.log('shoot');
 		$monCompte = $tableContenu.length;
 		if ($monCompte > 0){
-			console.log('Marche');
+			
 		}else{
 			document.getElementById('corpsDocs').innerHTML = "Rien à afficher ici pour le moment! <br> ";
 			if (maSess== false) { document.getElementById('corpsDocs').innerHTML +=" Brandissez votre compte utilisateur pour changer ça!";}else{document.getElementById('corpsDocs').innerHTML += 'Montre l\'exemple et change moi ça, '+maSess+'!! <br>'; }
@@ -43,7 +46,7 @@ echo '</script>';
 	}
 	function createForm(){
 		fonctionDeleteButton();
-		document.getElementById('corpsDocs').innerHTML += '<form action="./controller/creationPage.php" method="post"><input class="wid100" type="text" name="monTitre"><textarea class="wid100" name="monReptile" cols="100" rows="10"></textarea><input type="submit" name="monBouton" value="pages.reptile"></form>'; 
+		document.getElementById('corpsDocs').innerHTML += '<form action="./controller/creationPage.php" method="post"><input class="wid100" type="text" name="monTitre"><textarea class="wid100" name="monReptile" cols="100" rows="10"></textarea><input type="submit" name="monBouton" value="pagesreptile"></form>'; 
 		
 	}
 	function fonctionCreateButton(){
@@ -55,3 +58,14 @@ echo '</script>';
 		fonctionGeneration();
 	}
 </script>
+<?php
+function remplirTableau(){
+		$mesDocuments = scandir('./view/pagesreptile/');
+		for ($i=0; $i < count($mesDocuments) ; $i++) { 
+			if (strstr($mesDocuments[$i], '.php')) {
+				echo '<script> $tableContenu.push("'.$mesDocuments[$i].'"); </script>';
+			}
+		}
+	}
+
+?>

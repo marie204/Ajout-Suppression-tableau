@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="./style/style_page.css" />        
         <link rel="stylesheet" href="./style/styleNav.css" >
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./script/jquery-3.2.1.min.js"></script>
     </head>
     <body>
         <section id="monContenu">
