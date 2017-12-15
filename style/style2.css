@@ -105,7 +105,9 @@ li#essaie2:hover + li a{
 	color:red; 
 	font-size:15px;
 }
-
+.wid100{
+	width: 100%;
+}
 /*Receptive*//*
 @media only screen and (max-width: 500px){
 ul{
