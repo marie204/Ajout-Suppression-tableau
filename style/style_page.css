@@ -33,6 +33,9 @@ border: solid blue;
 	color:red; 
 	font-size:15px;
 }
+.centray{
+	text-align: center;
+}
 /*Rekatif aux classes du documents*/
 .miniaL{
 float: right;

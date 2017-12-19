@@ -8,7 +8,7 @@
 	<form action="./controller/login.php" method="post">
 		<?php
 		if(isset($_GET['etat']) && ($_GET['etat']=='erreur')){
-		echo '<br><p class="paraErreur">Une erreur est survenue, merci de réessayer</p>';
+		echo '<br><p class="paraErreur centray">Identifiant ou mot de passe incorrect!</p>';
 		}
 		if(isset($_SESSION['content'])){
 			echo 'Felicitation '.$_SESSION['content']. "! Vous êtes connecté(e)!";

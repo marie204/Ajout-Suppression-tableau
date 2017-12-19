@@ -32,7 +32,7 @@ echo '</script>';
 			
 		}else{
 			document.getElementById('corpsDocs').innerHTML = "Rien à afficher ici pour le moment! <br> ";
-			if (maSess== false) { document.getElementById('corpsDocs').innerHTML +=" Brandissez votre compte utilisateur pour changer ça!";}else{document.getElementById('corpsDocs').innerHTML += 'Montre l\'exemple et change moi ça, '+maSess+'!! <br>'; }
+			if (maSess== false) { document.getElementById('corpsDocs').innerHTML +=" Brandissez votre compte utilisateur pour changer ça!";}else{document.getElementById('corpsDocs').innerHTML += 'Montre l\'exemple et change moi ça, '+maSess+'!! Dirais-je si actuellement la fonction était terminée! <br>'; }
 		}		
 	};
 	
@@ -62,8 +62,9 @@ echo '</script>';
 function remplirTableau(){
 		$mesDocuments = scandir('./view/pagesreptile/');
 		for ($i=0; $i < count($mesDocuments) ; $i++) { 
-			if (strstr($mesDocuments[$i], '.php')) {
+			if (strstr($mesDocuments[$i], '.txt')) {
 				echo '<script> $tableContenu.push("'.$mesDocuments[$i].'"); </script>';
+				echo $mesDocuments[$i].'<br>';
 			}
 		}
 	}

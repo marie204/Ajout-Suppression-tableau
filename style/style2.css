@@ -105,6 +105,9 @@ li#essaie2:hover + li a{
 	color:red; 
 	font-size:15px;
 }
+.centray{
+	text-align: center;
+}
 .wid100{
 	width: 100%;
 }
